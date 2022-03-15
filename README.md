@@ -2,7 +2,7 @@
   Welding Utilities for CAW, GMAW, GTAW, OFW and SMAW welding. Runs in BASH.
   
   Released under CC Attribution-NonCommercial 4.0 International.
-
+Version 1.0 of the BASH version released!
 NOTE:
   GitHub has not been handling my files properly. For releases go here: https://mega.nz/folder/qBcEQDwD#ZBwEBfM3ki_6JwcdRGVfFg
 
