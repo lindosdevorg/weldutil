@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#  Carbon Arc Welding Utility
+#  GMAW Utility
 #  Copyright (C) 2021-2022  Gary J. Teixeira Jr.
 #  Released under the Creative Commons
 #  Attribution-NonCommercial 4.0 International
