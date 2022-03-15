@@ -2,7 +2,7 @@
 
 #  Weld Utils, a Multiprocess Welding Utility
 #  Copyright (C) 2021-2022  Gary J. Teixeira Jr.
-#  Relese under the Creative Commons
+#  Released under the Creative Commons
 #  Attribution-NonCommercial 4.0 International
 #  License
 
