@@ -1,5 +1,5 @@
 # weldutil
-  Welding Utilities for CAW, GMAW, GTAW, OFW and SMAW welding. Runs in DOS, DOSBox or Windows. A Linux version is coming.
+  Welding Utilities for CAW, GMAW, GTAW, OFW and SMAW welding. Runs in BASH.
   
   Released under CC Attribution-NonCommercial 4.0 International.
 
