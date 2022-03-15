@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#  Weld Utils, a Multiprocess Welding Utility
+#  Carbon Arc Welding Utility
 #  Copyright (C) 2021-2022  Gary J. Teixeira Jr.
-#  Relese under the Creative Commons
+#  Released under the Creative Commons
 #  Attribution-NonCommercial 4.0 International
 #  License
 
@@ -11,9 +11,7 @@
 # Global Declarations
 SCRIPT=${0##*/} # SCRIPT is the name of this script
 CODE=0 # user's input variable
-#
-# GNU GPL Version 3 Info
-printf "%b\n" "Weld Utils, a Multiprocess Welding Utility
+printf "%b\n" "Carbon Arc Welding Utility
  Copyright (C) 2021-2022  Gary J. Teixeira Jr.
   
  Released under the Creative Commons
@@ -21,36 +19,41 @@ printf "%b\n" "Weld Utils, a Multiprocess Welding Utility
  License
 
 You may contact the developer of this program at: ambientmine@protonmail.com
-please wait a few seconds..."
-sleep 10
+Please wait a few seconds..."
+sleep 5
 clear
 # Read user input, display output based on code entered
 read -p "Please Select a process :"  CODE
-printf "%s\n" "1. Carbon Arc Welding 2. GMAW/MIG 3. GTAW/TIG"
-printf "%s\n" "4. SMAW/MMA 5. OFW/OxyFuel
+printf "%s\n" "1. General Information 2. Electrode Charts 3. Mild Steel"
+printf "%s\n" "4. Cast Iron 5. Copper 6. Making a battery-powered welder"
 printf "\n"  
 if [ "$CODE" =  1 ]
 then
     clear
-    sh ./CAW.sh
+    printf "%s\n" "General Information:"
+    printf "%s\n" "Use DC current."
+    printf "%s\n" "Electrode should protrude 4-5 inches from electrode holder."
+    printf "%s\n" "Arc length should be between 1/4 and 3/8 inches."
 elif [ "$CODE" =  2 ]
 then
-    clear
-    sh ./GMAW.sh
+    printf "%s\n" "    Electrode Charts           Current (amps)"
+    printf "%s\n" "Electrode Diameter (inches)  Carbon   Graphite"
+    printf "%s\n" ""
+    printf "%s\n" "           1/8                15-30    15-35"
+    printf "%s\n" "           3/16               25-55    25-60"
+    printf "%s\n" "           1/4                50-85    50-90"
+    printf "%s\n" "           5/16              75-115    80-125"
+    printf "%s\n" "           3/8               100-150  110-165"
+    printf "%s\n" "           7/16              125-185  140-210"
+    printf "%s\n" "           1/2               150-225  170-260"
+    printf "%s\n" "           5/8               200-310  230-370"
+    printf "%s\n" "           3/4               250-400  290-490"
+    printf "%s\n" "           7/8               300-500  400-750"
 elif [ "$CODE" =  3 ]
 then
-    clear
-    sh ./GTAW.sh
-elif [ "$CODE" =  4 ]
-then
-    clear
-    sh ./SMAW.sh
-elif [ "$CODE" =  5 ]
-then
-    clear
-    sh ./OFW.sh
+    
 else
-    printf "%s\n" "Code not implemeted yet (or wrong code)"
+    printf "%s\n" "Invalid Option"
 fi
     
 # Cleanup
