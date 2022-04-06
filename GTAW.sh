@@ -72,7 +72,7 @@ then
 elif [ "$CODE" =  3 ]
 then
     clear
-    printf "%s\n" "Electrode Chart: DCEN (Pure Tungsten)"
+    printf "%s\n" "Electrode Chart: DCEN (Thoriated Tungsten)"
     printf "%s\n" "Electrode Diameter        Current (amps)"
     printf "%s\n" "     (inches)                Thoriated"
     printf "%s\n" "                     with Argon      with Helium"
